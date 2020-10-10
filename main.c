@@ -3,7 +3,6 @@
 #include <string.h>
 #include <openssl/sha.h>
 #include <readline/readline.h>
-
 #include "types.h"
 
 char *EnumToString(Candid c){
@@ -52,6 +51,7 @@ Vote CreateBlock(Vote PreviousBlock, Candid c){
   output.previous_hash = PreviousBlock.current_hash;
   return output;
 }
+
 Vote CreateGenesisBlock(Candid c){
   Vote output;
   output.candid = c;
