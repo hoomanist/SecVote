@@ -47,7 +47,8 @@ char *hash (char *buffer, size_t length){
 Vote CreateBlock(Vote PreviousBlock, Candid c){
   Vote output;
   output.candid = c;
-  output.current_hash = hash(EnumToString(c), strlen(EnumToString(c)));
+  char *hashed = hash(EnumToString(c), strlen(EnumToString(c)));
+  output.current_hash = hashed;
   output.previous_hash = PreviousBlock.current_hash;
   return output;
 }
