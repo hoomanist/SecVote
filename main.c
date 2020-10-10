@@ -115,7 +115,7 @@ int prompt(Vote Chain[]){
   return 0;
 }
 
-int main(int argc, char *argv[]) {
+int main() {
  Vote *Chain = malloc(MAX_CHAIN * sizeof(Vote));  
  for(;;){
   prompt(Chain); 
