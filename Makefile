@@ -1,5 +1,5 @@
 CC=cc
-CFLAGS=-Wall -Wextra -std=c99
+CFLAGS= -g -lreadline -lcrypto -Wall -std=c99
 
 all:
 	$(CC) $(CFLAGS) main.c -o secureVote

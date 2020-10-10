@@ -1,6 +1,10 @@
 #ifndef _H_TYPES_
 #define _H_TYPES_
 
+
+// Chain size
+#define MAX_CHAIN 50
+
 // candides list
 typedef enum _Candidates {Joe, Donald} Candid;
 // vote structure
@@ -9,7 +13,10 @@ typedef struct _Vote {
     char *current_hash;
     char *previous_hash;
 } Vote;
-// chain array
-Vote Chain[50];
+
+struct result {
+  int JoeNum;
+  int DonaldNum;
+};
 
 #endif
