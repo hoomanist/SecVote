@@ -99,7 +99,7 @@ int prompt(Vote Chain[]){
         Vote NewBlock = CreateBlock(LastBlock(Chain), Donald);
         appendVote(NewBlock, Chain);
       }else{
-        Vote NewBlock = CreateGenesisBlock(Joe);
+        Vote NewBlock = CreateGenesisBlock(Donald);
         appendVote(NewBlock, Chain);
       }
     }else {
